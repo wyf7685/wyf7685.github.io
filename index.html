@@ -1,0 +1,33 @@
+<head>
+  <title>wyf7685's page</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.css"
+  />
+</head>
+<body>
+  <center>
+    <div><p>wyf7685's page</p></div>
+    <br />
+    <div>
+      <p>Hello world from github pages!</p>
+    </div>
+
+    <br /><br /><br />
+
+    <div id="sakana-widget"></div>
+    <script>
+      function initSakanaWidget() {
+        const _2226 = SakanaWidget.getCharacter("chisato");
+        _2226.image = `/static/images/2226.png`;
+        SakanaWidget.registerCharacter("2226", _2226);
+        new SakanaWidget({ character: "2226" }).mount("#sakana-widget");
+      }
+    </script>
+    <script
+      async
+      onload="initSakanaWidget()"
+      src="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.js"
+    ></script>
+  </center>
+</body>
